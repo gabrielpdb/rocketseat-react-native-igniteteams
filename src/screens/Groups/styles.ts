@@ -1,13 +1,12 @@
+import { DefaultTheme } from "styled-components"
 import styled from "styled-components/native"
+
+type ThemeProps = {
+  theme: DefaultTheme
+}
 
 export const Container = styled.View`
   flex: 1;
-  background-color: #000;
-  align-items: center;
-  justify-content: center;
-`
-
-export const Title = styled.Text`
-  color: #fff;
-  font-size: 32px;
+  background-color: ${({ theme }: ThemeProps) => theme.COLORS.GRAY_600};
+  padding: 24px;
 `
