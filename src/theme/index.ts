@@ -1,3 +1,5 @@
+import { DefaultTheme } from "styled-components/native"
+
 export default {
   COLORS: {
     WHITE: "#FFFFFF",
@@ -26,4 +28,8 @@ export default {
     LG: 18,
     XL: 24,
   },
+}
+
+export type ThemeProps = {
+  theme: DefaultTheme
 }
