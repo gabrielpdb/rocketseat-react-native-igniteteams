@@ -1,4 +1,4 @@
-import { ThemeProps } from "@theme/index"
+import { MyThemeProps } from "@theme/index"
 import styled from "styled-components/native"
 
 export const Container = styled.View`
@@ -6,11 +6,11 @@ export const Container = styled.View`
   justify-content: center;
   align-items: center;
 
-  background-color: ${({ theme }: ThemeProps) => theme.COLORS.GRAY_600};
+  background-color: ${({ theme }: MyThemeProps) => theme.COLORS.GRAY_600};
 `
 
 export const LoadIndicator = styled.ActivityIndicator.attrs(
-  ({ theme }: ThemeProps) => ({
+  ({ theme }: MyThemeProps) => ({
     color: theme.COLORS.GREEN_700,
   })
 )``

@@ -30,6 +30,6 @@ export default {
   },
 }
 
-export type ThemeProps = {
+export type MyThemeProps = {
   theme: DefaultTheme
 }
